@@ -1,0 +1,99 @@
+:root {
+    --bkg_color: #FAFAFA;
+    --main_blue: #007CE7;
+    --main_red: #ff7979;
+    --text_grey: #3C3C3C;
+    --transition_speed: 0.1s;
+}
+
+.monaco-editor-component {
+    background-color: #ff0000;
+    margin-top: 20px;
+}
+
+.monaco-editor .scroll-decoration {
+    box-shadow: none !important;
+    /* border-top: 1px solid #252d33; */
+}
+
+.minimap-shadow-visible {
+    display: none;
+}
+
+.content {
+    margin: 30px 3vw;
+    width: 80%;
+}
+
+.subtitle {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--main_blue);
+}
+
+.title {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 3em;
+    color: var(--text_grey);
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.setup_info {
+    font-family: 'Manrope';
+    width: 100%;
+    font-size: 1.1em;
+}
+
+/* SETUP PAGE */
+
+.form_info, label {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 24px 0 8px 0;
+}
+
+label.short {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+label.long {
+    display: inline-block;
+    margin: 14px 0 8px 0;
+}
+
+input:-webkit-autofill::first-line {
+    font-family: 'Manrope';
+    /* font-size: 1.1em; */
+}
+
+.text_field.short, .text_field.long {
+    background-color: white;
+}
+
+.text_field.short {
+    width: 280px;
+}
+
+.text_field.short::placeholder, .text_field.text_field.long::placeholder {
+    color: #bbbbbb;
+}
+
+.text_field.long {
+    width: 400px;
+}
+
+.button.submit {
+    margin-top: 20px;
+    float: none;
+}
+
+/* SETUP ERROR HANDLING */
+
+/* PROBLEMS PAGE */

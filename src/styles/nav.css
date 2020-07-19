@@ -1,0 +1,122 @@
+@import url('font_fira.css');
+@import url('font_manrope.css');
+:root {
+    --navblue: #007CE7;
+    --logofontsize: 1.4em;
+    --ulfontsize: 1.1em
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: var(--navblue);
+    align-items: center;
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.logo-icon {
+    font-family: 'Fira Code', monospace, sans-serif;
+    font-weight: 400;
+    font-size: var(--logofontsize);
+}
+
+.pad {
+    margin-right: 5vw;
+}
+
+.router-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: var(--ulfontsize);
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+}
+
+.router-link:hover {
+    text-decoration: underline;
+}
+
+.no-hover {
+    font-size: 0.85em;
+}
+
+.no-hover:hover {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --navblue: #007CE7;
+        --logofontsize: 1.2em;
+        --ulfontsize: 0.9em
+    }
+
+    .nav {
+        padding: 15px 5%;
+    }
+}
+
+/* SUB NAV */
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 3vw;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #DADADA;
+    /* width: 47%; */
+}
+
+.sub-nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.sub-router-link {
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #B5B5B5;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 0 ;
+    border-bottom: 2px solid clear;
+}
+
+.sub-router-link:hover:not(.current) {
+    color: #3295EA;
+    padding-bottom: 4px;
+    opacity: 0.9;
+    transition: 0.1s;
+}
+
+.current{
+    font-weight: 400;
+    color: #3295EA;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3295EA;
+    transition: width 0.2s ease 0s;
+}
+
