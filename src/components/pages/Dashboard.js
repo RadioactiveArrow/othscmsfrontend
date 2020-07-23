@@ -36,7 +36,7 @@ const DashRouter = props => {
 	const path = props.path
 	const current = props.current
 
-	const initData = [
+	const competitorData = [
 		{
 			"label": "Setup",
 			"link": "/setup",
@@ -75,7 +75,7 @@ const DashRouter = props => {
 				"component": Setup
 			}])
 		} else if (team_data) {
-			setRoutes(initData)
+			setRoutes(competitorData)
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [team_data])

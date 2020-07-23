@@ -2,7 +2,9 @@ import cookie from 'react-cookies';
 import React, { useRef } from 'react';
 import { themeData } from '../misc/config';
 import Editor, { monaco } from '@monaco-editor/react';
+import { encode, decode } from 'js-base64';
 
+//TODO make monaco resize onresize
 monaco
   .init()
   .then(monaco => {
@@ -20,14 +22,14 @@ const CodeEditor = () => {
     editorRef.current = editor
     var problemCookie = cookie.load('problem')
     if (problemCookie) {
-      editor.setValue(atob(unescape(problemCookie)))
+      editor.setValue(decode(problemCookie))
     }
     editorChangeListener()
   }
 
   const editorChangeListener = () => {
     editorRef.current.onDidChangeModelContent(e => {
-      cookie.save('problem', btoa(escape(editorRef.current.getValue())), { 'path': '/' , 'maxAge': (10 * 365 * 24 * 60 * 60)})
+      cookie.save('problem', encode(editorRef.current.getValue()), { 'path': '/' , 'maxAge': (10 * 365 * 24 * 60 * 60)})
     })
   }
 

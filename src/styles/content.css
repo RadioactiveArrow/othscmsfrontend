@@ -6,6 +6,8 @@
     --transition_speed: 0.1s;
 }
 
+/* MONACO CODE EDITOR */
+
 .monaco-editor-component {
     background-color: #ff0000;
     margin-top: 20px;
@@ -13,12 +15,13 @@
 
 .monaco-editor .scroll-decoration {
     box-shadow: none !important;
-    /* border-top: 1px solid #252d33; */
 }
 
 .minimap-shadow-visible {
     display: none;
 }
+
+/* GENERAL */
 
 .content {
     margin: 30px 3vw;
@@ -70,7 +73,6 @@ label.long {
 
 input:-webkit-autofill::first-line {
     font-family: 'Manrope';
-    /* font-size: 1.1em; */
 }
 
 .text_field.short, .text_field.long {
@@ -95,5 +97,36 @@ input:-webkit-autofill::first-line {
 }
 
 /* SETUP ERROR HANDLING */
+.short.error {
+    border-color: var(--main_red) !important;
+    transition: 0.25s; 
+}
+
+.long.error {
+    border-color: var(--main_red) !important;
+    transition: 0.25s;
+}
+
+.info-msg {
+    margin-top: 15px;
+    font-family: 'Fira Code';
+    color: #5CB900;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.info-msg > strong {
+    color: #007CE7;
+    font-weight: 500;
+}
+
+.info-msg.sub {
+    opacity: 1;
+}
+
+p.info-msg.error {
+    opacity: 1;
+    color: var(--main_red);
+}
 
 /* PROBLEMS PAGE */

@@ -87,19 +87,18 @@ export const AuthProvider = props => {
 			.then(res => {
 				console.log(res);
 				if (res.data.success) {
-					//TODO make the backend return a user_data object w/ stuff to repopulate fields
-					// console.log("A");
-					// var newData = {...authData}
-					// console.log(newData)
-					// console.log("B");
-					setAuthData({...authData, "team_data": {"member1":"A","member2":"B","member3":"C","school":"oths"}})
-					console.log(authData)
+					setAuthData({...authData, "team_data": {
+						"member1": member1,
+						"member2": member2,
+						"member3": member3,
+						"school": school
+					}})
 				}
 			})
 			.catch(err => {
-				console.log(err)
 			})
 			.finally(() => {
+				callback()
 			})
 	}
 

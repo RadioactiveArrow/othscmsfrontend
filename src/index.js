@@ -5,7 +5,7 @@ import App from './App';
 import axios from 'axios'
 import * as serviceWorker from './serviceWorker';
 
-axios.defaults.baseURL = 'http://192.168.1.25//othscmsbackend/'; //TODO switch to URL from config.js or from dotenv
+axios.defaults.baseURL = 'http://localhost/othscmsbackend/'; //TODO switch to URL from config.js or from dotenv
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = "*";
 
 ReactDOM.render(

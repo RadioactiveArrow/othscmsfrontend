@@ -47,7 +47,7 @@ export const themeData = {
         "token": "variable"
       },
       {
-        "foreground": "0089FF", //Main thing here!! 
+        "foreground": "0DB9D7", //Main thing here!! 
         "token": "keyword"
       },
       {
