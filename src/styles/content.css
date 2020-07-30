@@ -71,7 +71,7 @@ label.short {
 
 label.long {
     display: inline-block;
-    margin: 28px 0 0px 0;
+    margin: 18px 0 0px 0;
 }
 
 input:-webkit-autofill::first-line {
