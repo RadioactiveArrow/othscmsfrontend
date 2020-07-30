@@ -52,23 +52,26 @@
 
 /* SETUP PAGE */
 
+.form_info {
+    padding: 14px 0 0px 0;
+}
+
 .form_info, label {
     font-family: 'Manrope';
     font-weight: 600;
     font-size: 1.1em;
-    margin: 24px 0 8px 0;
+    margin: 18px 0 0px 0;
 }
 
 label.short {
     display: inline-block;
     width: 120px;
-    text-align: right;
     padding-right: 20px;
 }
 
 label.long {
     display: inline-block;
-    margin: 14px 0 8px 0;
+    margin: 28px 0 0px 0;
 }
 
 input:-webkit-autofill::first-line {

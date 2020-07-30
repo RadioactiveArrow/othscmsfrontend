@@ -2,14 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../../../styles/content.css'
 import { useAuth } from '../../AuthProvider';
 const Setup = () => {
-	//Default error status
-	const initError = {
-		"classes": "none",
-		"msg": "Bruh Moment!"
-	}
-
 	//Loads authentication from context
-	const { authenticated, team_data, setTeamData } = useAuth()
+	const { team_data, setTeamData } = useAuth()
 
 	//State variables (memeber names, school, error)
 	const [member1, setMember1] = useState("")
@@ -21,6 +15,7 @@ const Setup = () => {
 
 	useEffect(() => {
 		setVars()
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [team_data])
 
 	const setVars = () => {
@@ -66,18 +61,22 @@ const Setup = () => {
 					<p className="form_info">Start by entering your team members' names*:</p>
 
 					<label className="short" htmlFor="member1">Member 1:</label>
+					<br />
 					<input autoComplete="false" className={`text_field short ${err.nameError && 'error'}`} placeholder="Full Name" name="member1" id="member1" type="text" value={member1} onChange={e => setMember1(e.target.value)} />
 					<br />
 
 					<label className="short" htmlFor="member2">Member 2:</label>
+					<br />
 					<input className="text_field short" placeholder="Full Name (If they exist)" name="member2" id="member2" type="text" value={member2} onChange={e => setMember2(e.target.value)} />
 					<br />
 
 					<label className="short" htmlFor="member3">Member 3:</label>
+					<br />
 					<input className="text_field short" placeholder="Full Name (If they exist)" name="member3" id="member3" type="text" value={member3} onChange={e => setMember3(e.target.value)} />
 					<br />
 
-					<label className="long" htmlFor="school">Now enter the school you attend*:</label><br />
+					<label className="long" htmlFor="school">Now enter the school you attend*:</label>
+					<br />
 					<input className={`text_field long ${err.schoolError && 'error'}`} placeholder="Eg. OTHS" name="school" id="school" type="text" value={school} onChange={e => setSchool(e.target.value)} />
 					<br />
 

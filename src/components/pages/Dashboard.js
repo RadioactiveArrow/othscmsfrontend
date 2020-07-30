@@ -6,7 +6,6 @@ import { useAuth } from '../AuthProvider';
 import { useEffect } from 'react';
 import CodeEditor from '../CodeEditor'
 
-import Home from './Home'
 import Setup from './competitor/Setup';
 import Problems from './competitor/Problems';
 import '../../styles/resizer.css'
@@ -64,7 +63,7 @@ const DashRouter = props => {
 		}
 	]
 
-	const { authenticated, team_data } = useAuth()
+	const { team_data } = useAuth()
 	const [routes, setRoutes] = useState([])
 
 	useEffect(() => {
@@ -92,7 +91,7 @@ const DashRouter = props => {
 }
 
 const Page1 = () => {
-	const { authenticated, team_data } = useAuth();
+	// const { authenticated, team_data } = useAuth();
 	return (
 		<div className="content">
 			<h2 className="subtitle">Questions Submitted: 0</h2>
@@ -104,7 +103,7 @@ const Page1 = () => {
 }
 
 const Page2 = () => {
-	const { authenticated, team_data } = useAuth();
+	// const { authenticated, team_data } = useAuth();
 	return (
 		<div className="content">
 			<h2 className="subtitle">Pending Clarifications: 0</h2>
@@ -116,7 +115,7 @@ const Page2 = () => {
 }
 
 const Page3 = () => {
-	const { authenticated, team_data } = useAuth();
+	// const { authenticated, team_data } = useAuth();
 	return (
 		<div className="content">
 			<h2 className="subtitle">Your Rank: --/50</h2>
