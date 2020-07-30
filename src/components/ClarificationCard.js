@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ClarificationCard = ({ problemName, author, questionText,  }) => {
+const ClarificationCard = ({ problemName, author, questionText, response }) => {
     return (
         <div>
         </div>
