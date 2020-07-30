@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import RunCard from '../../RunCard'
 import '../../../styles/content.css'
 
