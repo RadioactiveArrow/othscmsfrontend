@@ -9,11 +9,11 @@ const AuthRouter = () => {
 	return (
 		<div className="container">
 			<Router>
-				<TopNav/>
+				<TopNav />
 				<Switch>
 					<Route path="/login" component={Login} />
-					<PrivateRoute path="/app" component={Dashboard}/>
-					<Redirect to="/app"/>
+					<PrivateRoute path="/app" component={Dashboard} />
+					<Redirect to="/app" />
 				</Switch>
 			</Router>
 		</div>

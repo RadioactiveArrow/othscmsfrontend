@@ -61,11 +61,13 @@ export const AuthProvider = props => {
 				setAuthData({ "authenticated": false })
 			})
 			.finally(() => {
+				console.log("Logging in...");
 				callback()
 			})
 	}
 
 	const logout = () => { //Logs out by removing session cookie
+		console.log("Logging out...");
 		cookie.remove('auth-token', { 'path': '/' })
 		setAuthData({ "authenticated": false })
 	}
@@ -73,6 +75,7 @@ export const AuthProvider = props => {
 	const setTeamData = (member1, member2, member3, school, callback) => { //Sets user's team data
 		//Checks if team already exists for user and updates existing team, otherwise creates new
 		var authToken = cookie.load('auth-token')
+		console.log("setTeamData");
 		axios.post(
 			'team_manager.php',
 			{
@@ -96,9 +99,11 @@ export const AuthProvider = props => {
 				}
 			})
 			.catch(err => {
+				console.log(err)
 			})
 			.finally(() => {
 				callback()
+				console.log("callback");
 			})
 	}
 

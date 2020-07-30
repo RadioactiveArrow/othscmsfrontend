@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const ClarificationCard = ({ problemName, author, questionText, response }) => {
     return (
