@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 300;
     src: url('../assets/type/manrope/Manrope-Light.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/type/manrope/Manrope-Light.woff') format('woff'), /* Modern Browsers */
+         url('../assets/type/manrope/Manrope-Light.woff') format('woff'); /* Modern Browsers */
 
   }
   /* manrope-regular - latin */
@@ -13,7 +13,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../assets/type/manrope/Manrope-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/type/manrope/Manrope-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/type/manrope/Manrope-Regular.woff') format('woff'); /* Modern Browsers */
   }
   /* manrope-500 - latin */
   @font-face {
@@ -21,7 +21,7 @@
     font-style: normal;
     font-weight: 500;
     src: url('../assets/type/manrope/Manrope-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/type/manrope/Manrope-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../assets/type/manrope/Manrope-Medium.woff') format('woff'); /* Modern Browsers */
 
   }
   /* manrope-600 - latin */
@@ -30,5 +30,5 @@
     font-style: normal;
     font-weight: 600;
     src: url('../assets/type/manrope/Manrope-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../assets/type/manrope/Manrope-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../assets/type/manrope/Manrope-Bold.woff') format('woff'); /* Modern Browsers */
   }

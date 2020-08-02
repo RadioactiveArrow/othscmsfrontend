@@ -36,7 +36,7 @@
 }
 
 .title {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 3em;
     color: var(--text_grey);
@@ -45,7 +45,7 @@
 }
 
 .setup_info {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     width: 100%;
     font-size: 1.1em;
 }
@@ -57,7 +57,7 @@
 }
 
 .form_info, label {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 1.1em;
     margin: 18px 0 0px 0;
@@ -75,7 +75,7 @@ label.long {
 }
 
 input:-webkit-autofill::first-line {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
 }
 
 .text_field.short, .text_field.long {

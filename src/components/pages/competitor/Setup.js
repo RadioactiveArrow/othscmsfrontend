@@ -77,7 +77,7 @@ const Setup = () => {
 
 					<label className="long" htmlFor="school">Now enter the school you attend*:</label>
 					<br />
-					<input className={`text_field long ${err.schoolError && 'error'}`} placeholder="Eg. OTHS" name="school" id="school" type="text" value={school} onChange={e => setSchool(e.target.value)} />
+					<input className={`text_field short ${err.schoolError && 'error'}`} placeholder="Eg. OTHS" name="school" id="school" type="text" value={school} onChange={e => setSchool(e.target.value)} />
 					<br />
 
 					<button className="button submit">Submit -&gt;</button>
