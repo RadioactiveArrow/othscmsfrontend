@@ -10,7 +10,7 @@
 
 .monaco-editor-component {
     background-color: #ff0000;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .monaco-editor .scroll-decoration {
@@ -24,8 +24,9 @@
 /* GENERAL */
 
 .content {
-    margin: 30px 3vw;
-    width: 80%;
+    margin: 30px 0vw;
+    padding: 0 3vw;
+    width: 50vw;
 }
 
 .subtitle {
@@ -53,7 +54,7 @@
 /* SETUP PAGE */
 
 .form_info {
-    padding: 14px 0 0px 0;
+    padding: 6px 0 0px 0;
 }
 
 .form_info, label {

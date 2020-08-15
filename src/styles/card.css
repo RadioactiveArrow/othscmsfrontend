@@ -1,0 +1,73 @@
+:root {
+    --bkg_color: #FAFAFA;
+    --main_blue: #007CE7;
+    --main_red: #ff7979;
+    --text_grey: #3C3C3C;
+    --transition_speed: 0.1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1.2px solid var(--main_blue);
+    border-radius: 10px;
+    padding: 18px 30px;
+    margin: 20px 0;
+    transition: 0.25s;
+}
+
+.card > h1 {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--main_blue);
+    user-select: none;
+}
+
+.card > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    color: var(--main_blue);
+    user-select: none;
+}
+
+.msg-ctr {
+    display: flex;
+    align-items: center;
+}
+
+.msg-ctr > h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-left: 1px;
+    color: var(--main_blue);
+    user-select: none;
+}
+
+.error, .error > h1, .error.msg-ctr > h3 {
+    border-color: var(--main_red);
+    color: #F37373;
+}
+
+.accepted, .accepted > h1, .accepted.msg-ctr > h3 {
+    border-color: #44BBA4;
+    color: #44BBA4;
+}
+
+.icon {
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 20px;
+}

@@ -25,6 +25,8 @@
     padding: 15px 3%;
     background-color: var(--navblue);
     align-items: center;
+
+    max-height: 10vh;
 }
 
 .nav>ul {

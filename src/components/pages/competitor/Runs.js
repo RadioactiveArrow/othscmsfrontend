@@ -9,7 +9,7 @@ const Runs = () => {
       <h1 className="title">Runs</h1>
       <div className="runs_div">
         <RunCard fileName="TestFile.java" problemName="Problem #1" status="error" msg="Syntax Error" />
-        <RunCard fileName="OtherFile.java" problemName="Another Problem" status="pending" />
+        <RunCard fileName="OtherFile.java" problemName="Another Problem" status="pending"/>
         <RunCard fileName="GoodFile.java" problemName="Easy Problem" status="accepted" />
       </div>
     </div>
