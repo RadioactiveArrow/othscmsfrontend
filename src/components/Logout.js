@@ -6,9 +6,9 @@ const Logout = () => {
 	const { logout } = useAuth();
 
 	useEffect(() => {
-		console.log("logging out")
 		logout()
 	}, [logout])
+	
 	return (
 		<Redirect to="/login" />
 	)

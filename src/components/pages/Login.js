@@ -58,7 +58,7 @@ const Login = () => {
 	//Returns login page if user is not authenticated
 	if (authenticated === false) {
 		return (
-			<div onClick={() => setErr(initError)}>
+			<div onClick={() => setErr(initError)} className="login-page-div">
 				<div className={`login-main ${err.classes}`}>
 					<div className="login_container">
 						<div className="wordmark_container">

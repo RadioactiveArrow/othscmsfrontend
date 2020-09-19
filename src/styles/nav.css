@@ -25,6 +25,8 @@
     padding: 15px 3%;
     background-color: var(--navblue);
     align-items: center;
+
+    max-height: 10vh;
 }
 
 .nav>ul {
@@ -96,20 +98,21 @@
 }
 
 .sub-router-link {
-    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1.2em;
     color: #B5B5B5;
     margin-right: 30px;
     text-decoration: none;
     padding: 0 ;
     border-bottom: 2px solid clear;
+    transition: .2s;
+
 }
 
 .sub-router-link:hover:not(.current) {
     color: #3295EA;
     padding-bottom: 4px;
     opacity: 0.9;
-    transition: 0.1s;
 }
 
 .current{

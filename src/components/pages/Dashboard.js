@@ -25,9 +25,7 @@ const Dashboard = props => {
 		<div className="SplitPaneCtr">
 			<SplitPane split="vertical" defaultSize={'50%'} style={splitStyles}>
 				<DashRouter path={path} current={current} />
-				{/* <div> */}
-					<CodeEditor/>
-				{/* </div> */}
+				<CodeEditor />
 			</SplitPane>
 		</div>
 	)
@@ -78,8 +76,9 @@ const DashRouter = props => {
 				"component": Setup
 			}])
 		} else if (team_data) {
-			console.log(true)
-			setRoutes(competitorRoutes)
+			setRoutes(competitorData)
+		} else {
+			console.log("ERROR: Server didn't provide team_data");
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [team_data])
