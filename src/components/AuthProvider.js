@@ -85,6 +85,7 @@ export const AuthProvider = props => {
 			}
 		)
 			.then(res => {
+				console.log("REsULTS")
 				console.log(res);
 				if (res.data.success) {
 					setAuthData({...authData, "team_data": {
